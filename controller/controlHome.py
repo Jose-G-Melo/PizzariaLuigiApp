@@ -5,8 +5,8 @@ def main():
       if(opcao > 3):
         print("\nOpção inválida, tente novamente!\n")
         continue
-      break
       return opcao
+      break
     except ValueError:
       print("\nTivemos um problema com o tipo de dado informado, tente\nnovamente! OBS: informe um dos números inteiros informados\npara cada opção\n")
       continue
