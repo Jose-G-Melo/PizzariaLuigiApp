@@ -1,5 +1,5 @@
 from controller import controlHome
-from views import windowHome
+from views import windowHome, windowRegister
 
 def navigation():
   windowHome.window()
@@ -7,7 +7,7 @@ def navigation():
   if(controle == 1):
     print("Login")
   elif(controle == 2):
-    print("Cadastro")
+    windowRegister.register()
   else:
     print("Até mais")
   
