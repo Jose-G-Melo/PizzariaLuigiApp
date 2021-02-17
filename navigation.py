@@ -1,13 +1,18 @@
-from controller import controlHome
-from views import windowHome
+from controller import controlHome, controlRegister, controlLogin
+from views import windowHome, windowRegister, windowLogin
+import os
 
 def navigation():
   windowHome.window()
   controle = controlHome.main()
   if(controle == 1):
-    print("Login")
+    os.system("cls" if os.name == "nt" else "clear")
+    windowLogin.window()
+    controlLogin.conectar()
   elif(controle == 2):
-    print("Cadastro")
+    os.system("cls" if os.name == "nt" else "clear")
+    windowRegister.window()
+    controlRegister.cadastro()
   else:
     print("Até mais")
   
