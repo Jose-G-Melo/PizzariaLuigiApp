@@ -7,7 +7,7 @@ def navigation():
   if(controle == 1):
     print("Login")
   elif(controle == 2):
-    windowRegister.register()
+    windowRegister.window()
   else:
     print("Até mais")
   

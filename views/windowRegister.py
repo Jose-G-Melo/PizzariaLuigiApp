@@ -1,4 +1,4 @@
-def register():
+def window():
   print("==================================================")
   print("|                                                |")
   print("|                 Pizzaria Luigi                 |")
