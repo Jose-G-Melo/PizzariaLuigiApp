@@ -1,5 +1,6 @@
 from gerarId import gerar
 from salvarDados import salvarCadastro
+from lerDados import consultarCadastro
 
 class Usuario:
   def __init__(self):
@@ -17,3 +18,6 @@ class Usuario:
     self.email = email
     self.senha = senha
     salvarCadastro(self.idUser, typeuser, self.username, self.cpf, self.telefone, self.email, self.senha)
+  
+  def logar(self, email, senha):
+    return consultarCadastro(email, senha)    
