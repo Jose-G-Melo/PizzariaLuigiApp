@@ -1,4 +1,4 @@
-from controller import controlHome
+from controller import controlHome, controlRegister
 from views import windowHome, windowRegister
 import os
 
@@ -10,6 +10,7 @@ def navigation():
   elif(controle == 2):
     os.system("cls" if os.name == "nt" else "clear")
     windowRegister.window()
+    controlRegister.cadastro()
   else:
     print("Até mais")
   

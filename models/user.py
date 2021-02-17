@@ -1,9 +1,9 @@
-from controller import gerarId
-from controller import salvarDados
+from gerarId import gerar
+from salvarDados import salvarCadastro
 
 class Usuario:
   def __init__(self):
-    self.idUser = gerarId.gerar('database/usuarios.txt')
+    self.idUser = gerar('database/usuarios.txt')
     self.username = None
     self.cpf = None
     self.telefone = None
@@ -16,4 +16,4 @@ class Usuario:
     self.telefone = telefone
     self.email = email
     self.senha = senha
-    salvarDados.salvarCadastro(self.idUser, typeuser, self.username, self.cpf, self.telefone, self.email, self.senha)
+    salvarCadastro(self.idUser, typeuser, self.username, self.cpf, self.telefone, self.email, self.senha)

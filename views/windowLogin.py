@@ -2,6 +2,6 @@ def window():
   print("==================================================")
   print("|                                                |")
   print("|                 Pizzaria Luigi                 |")
-  print("|                Tela de cadastro                |")
+  print("|                  Tela de login                 |")
   print("==================================================")
-  print("Informe seus dados abaixo para fazer o cadastro!\n")
+  print("Informe seu email e senha para fazer o login!")
