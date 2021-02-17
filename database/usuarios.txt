@@ -1,0 +1,1 @@
+{ "id": "1", "typeuser": "2", "username": "José Vitor Gonçalves de Melo", "cpf": "05088245246", "phone": "69992147960", "email": "josemelo1904003@gmail.com", "senha": "estudar19" } 
