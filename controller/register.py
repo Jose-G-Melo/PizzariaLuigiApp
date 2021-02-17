@@ -23,4 +23,7 @@ def cadastro():
       print("\nAs senhas são diferentes, tente novamente!\n")
 
   usuario = user.Usuario()
-  usuario.cadastrar(tipo_usuario, nome, cpf, telefone, email,senha)
+  try:
+    usuario.cadastrar(tipo_usuario, nome, cpf, telefone, email,senha)
+  except:
+    print("Tivemos um problema quando estávamos fazendo seu cadastro, tente novamente mais tarde!")
