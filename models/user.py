@@ -1,3 +1,4 @@
+# importando os módulos de geração de id, de manipulação do "banco de dados", módulo padrão para trabalho com datas e horários, além do modelo de endereço
 from gerarId import gerar
 from salvarDados import salvarCadastro
 from lerDados import consultarCadastro
@@ -8,9 +9,8 @@ import datetime
 data = datetime.datetime.now()
 dataAtual = datetime.date(data.year, data.month, data.day)
 
-
-
-
+# modelo (forma) de usuário no sistema, com atributos e métodos
+# superclasse
 class Usuario:
   def __init__(self):
     self.idUser = gerar('database/usuarios.txt')
@@ -34,6 +34,8 @@ class Usuario:
   def alterarDados(self):
     print("Tô com preguiça de mudar os teus dados!")
 
+# modelo (forma) de cliente no sistema, com atributos e métodos
+# subclasse
 class Cliente(Usuario):
   def __init__(self):
     Usuario.__init__(self)
@@ -90,6 +92,8 @@ class Cliente(Usuario):
         break
     return self.intoleranciaGluten, self.intoleranciaLactose
 
+# modelo (forma) de funcionário no sistema, com atributos e métodos
+# subclasse
 class Funcionario(Usuario):
   def __init__(self):
     Usuario.__init__(self)

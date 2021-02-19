@@ -1,5 +1,7 @@
+# importando módulo padrão para trabalhar com json
 import json
 
+# funcionalidade de gerar id
 def gerar(file):
   try:
     db = open(file, "r", encoding="UTF-8")

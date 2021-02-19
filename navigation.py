@@ -1,7 +1,11 @@
+# Aqui que as funcionalidades se unem e formam o sistema
+
+# importando as telas e os controles de cada parte do sistema e o módulo do sistema
 from controller import controlHome, controlRegister, controlLogin
 from views import windowHome, windowRegister, windowLogin
 import os
 
+# controla a aplicação por inteira
 def navigation():
   windowHome.window()
   controle = controlHome.main()

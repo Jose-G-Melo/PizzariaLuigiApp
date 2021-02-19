@@ -1,5 +1,7 @@
+# importando a API de consulta do endereço
 from pycep_correios import get_address_from_cep as cep
 
+# modelo (forma) de endereço no sistema, com os atributos e métodos
 class Endereco:
   def __init__(self):
     self.cep = None

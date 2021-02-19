@@ -1,3 +1,4 @@
+# salva no "banco de dados" os dados do usuário
 def salvarCadastro(ID, typeuser, username, cpf, telefone, email, senha, dadosComplemento):
   try:
     user = open("database/usuarios.txt", "a", encoding="UTF-8")

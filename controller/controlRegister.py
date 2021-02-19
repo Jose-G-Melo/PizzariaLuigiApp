@@ -1,6 +1,9 @@
+# importando os modelos de usuários (funcionário e cliente)
 from models import user
 
+# responsável pelo controle do cadastro do usuário 
 def cadastro():
+  # entra os dados em comum a todos os usuários
   nome = input("Nome: ")
   cpf = input("CPF: ")
   telefone = input("Telefone: ")
@@ -22,6 +25,7 @@ def cadastro():
       print("\nTivemos um problema com o tipo de dado informado, tente\nnovamente! OBS: informe um dos números inteiros informados\npara cada opção\n")
       continue
 
+  # dependendo do tipo de usuário segue o formulário de forma diferente
   if(tipo_usuario == 1):
     registro = int(input("Número de registro: "))
     funcao = input("Função: ")
