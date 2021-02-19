@@ -1,1 +1,2 @@
 { "id": "1", "typeuser": "2", "username": "José Vitor Gonçalves de Melo", "cpf": "05088245246", "phone": "69992147960", "email": "josemelo1904003@gmail.com", "senha": "estudar19" } 
+{ "id": "2", "typeuser": "1", "username": "Ana Maria Braga", "cpf": "12345678900", "phone": "40028922", "email": "mais.vc@gmail.com", "senha": "loro1", "registro": "1", "funcao": "cozinheira", "periodo_empregado": "31", "carga_horaria": "08:00" } 
